@@ -1,0 +1,270 @@
+@import "./var.scss";
+
+body,
+main,
+footer,
+p,
+h1,
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Header
+
+#showcase {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 105px;
+  background-color: $color-4-B;
+}
+
+.list-left {
+  display: flex;
+  .logo {
+    padding: 30px;
+  }
+  a {
+    color: $color-1-L;
+  }
+  li {
+    padding: 45px 0px 44px 15px;
+  }
+}
+
+.list-right {
+  display: flex;
+  li {
+    margin-top: 40px;
+    margin-right: 30px;
+  }
+  a {
+    color: $color-1-L;
+  }
+}
+
+.small-button {
+  position: relative;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  margin-top: 33px;
+  margin-right: 25px;
+  margin-bottom: 32px;
+  background-color: $color-1-B;
+  border: none;
+  color: $color-1-L;
+  @include text-buttons;
+  a {
+    color: $color-1-L;
+  }
+}
+.small-button:hover{
+  transition: 0.6s;
+  background-color: #1a9ada;
+}
+// Main
+
+.main {
+  display: flex;
+    justify-content: space-between;
+    background-color: $color-1-D;
+
+    .main-texts{
+        margin-left: 100px;
+        h1{
+            @include title-text;
+            font-weight: 500px;
+            padding-top: 130px;
+    
+        }    
+        p{
+            @include texts-p();
+            color: $color-1-L;
+            font-weight: 300;
+            padding-top: 50px;
+        }
+    }
+
+    .large-button{
+        width: 340px;
+        height: 70px;
+        margin-top: 50px;
+        background-color: $color-1-B;
+        border: none;
+        @include text-buttons-2;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .large-button2{
+        width: 340px;
+        height: 70px;
+        margin-top: 30px;
+        background-color: $color-1-B;
+        border: none;
+        @include text-buttons-2;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .divider{
+        margin-top: 30px;
+        display: flex;
+        .textdivider{
+            font-family: lato;
+            font-weight: 300;
+            font-size: 18px;
+            padding-left: 20px;
+            color: $color-1-L;
+            
+        }
+        .d2{
+            padding-left: 20px;
+        }
+    }
+
+    .small-words{
+        margin-top: 50px;
+        @include little-texts-2;
+        font-weight: bold;
+        font-size: 1px;
+        
+    }
+    .main-background{
+      max-width: 50%;
+      height: 750px;
+      min-height: 100px;
+    }
+    
+}
+
+// Main 2
+.channels{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  h1{
+    @include title-text-2;
+    font-weight: 300;
+    padding-top: 80px;
+  }
+  p{
+    padding-top: 30px;
+    @include little-texts;
+    font-weight: 300;
+  }
+}
+.cards{
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+    .channel{
+    width: 250px;
+    height: 170px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 2px;
+    cursor: pointer;
+  }
+
+}
+
+// Introducing Prime Video
+.popcorn{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-1-D;
+  .p-texts{
+    color: white;
+    margin-right: 400px;
+    h2{
+      padding-top: 150px;
+      @include title-text;
+      letter-spacing: 2px;
+    }
+    p{
+      margin-top: 10px;
+      @include texts-p-2;
+      font-weight: 300;
+    }
+    .large-button{
+      width: 280px;
+      height: 54px;
+      margin-top: 50px;
+      background-color: $color-1-B;
+      border: none;
+      @include text-buttons-2;
+      font-weight: 600;
+      cursor: pointer;
+  }
+  }
+  img{
+    margin-left: 100px;
+    width: 650px;
+    height: 600px;
+  }
+}
+
+// Svg's section
+
+.svg-amazon{
+  text-align: center;
+  display:flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  .svg{
+    width: 300px;
+    height: 300px;
+  }
+  h2{
+    @include little-texts;
+    font-size: 35px;
+    font-weight: 500;
+  }
+  p{
+    @include texts-p;
+    font-size: 22px;
+    font-weight: 300;
+
+  }
+}
+
+
+// Footer
+footer{
+  text-align: center;
+  background-color: $color-2-D;
+  width: 100%;
+  height: 20vh;
+  img{
+    padding-top: 10px;
+    width: 150px;
+    height: 56px;
+}
+  p{
+    @include little-texts-2;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: $color-1-B;
+  }
+  span{
+    color: $color-3-D;
+  }
+
+}
+
