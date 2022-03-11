@@ -138,24 +138,72 @@ a {
 
 .categories-section{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100vw;
-  height: 500px;
+  height: 400px;
   background-color: $color-3-B;
   color: white;
-  position:absolute;
-  bottom: 36.6%;
+  position: absolute;
+  position: fixed;
+  bottom: 48%;
+  h2{
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 82%;
+    left: 22.2%;
+  }
   .cards-categories{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    gap: 25px;
+    margin-bottom: 500px;
+    margin-top: 5%;
+    margin-left: 15%;
   }
   .card{
-    width: 100px;
-    height: 100px;
-    background-color: #104762;
+    flex-wrap: wrap;
+    width: 175px;
+    height: 90px;
+    background-color: #144E77;
+    .LT, p{
+      text-align: center;
+      font-family: 'Lato';
+      font-size: 16px;
+      font-weight: 600;
+      padding: 32px 20px 0px 20px;
+      line-height: 22px;
+    }
+    .LT{
+      padding-top: 22px;
+    }
+    
   }
   .list-section{
+    margin-top: 2%;
+    margin-left: 50px;
     display: flex;
     list-style: none;
+    .list-2{
+      margin-top: 3.3%;
+    }
+    ul{
+      font-family: 'Lato';
+    }
+    li{
+      font-family: 'Lato';
+      font-size: 16px;
+      color: rgb(99, 117, 138);
+      margin-right: 50px;
+      padding-top: 15px
+    }
+  }
+  .divider{
+    margin-left: 50px;
+    width: 1px;
+    height: 340px;
+    background-color: rgb(255, 255, 255);
   }
 }
 
