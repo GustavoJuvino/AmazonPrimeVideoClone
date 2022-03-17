@@ -18,6 +18,8 @@ a {
   text-decoration: none;
 }
 
+
+
 // Header
 
 #showcase {
@@ -37,6 +39,14 @@ a {
   a {
     color: $color-1-L;
   }
+  .a-effect{
+    color: rgb(199, 195, 195);
+    font-weight: bold;
+  }
+  .a-effect:hover{
+    color: white;
+    transition: 0.5s;
+  }
   li {
     padding: 45px 0px 44px 15px;
   }
@@ -47,8 +57,12 @@ a {
   li {
     margin-top: 40px;
     margin-right: 30px;
+    color: $color-1-L;
   }
-  a {
+  .l-acronyms {
+    cursor: pointer;
+  }
+  a{
     color: $color-1-L;
   }
 }
@@ -75,67 +89,53 @@ a {
   background-color: #1a9ada;
 }
 
-// Main
 
-// Side-nav
-
-// .side-nav{
-//   padding-top: 241px;
-// }
-// .tab-nav{
-//     bottom: 53%;
-//     left: 61%;
-//     background-color: $color-5-B;
-//     color: white;
-//     width: 500px;
-//     position: absolute;
-//     display: block;
-//     flex-wrap: wrap;
-//     li{
-//       list-style: none;
-//       font-family: Lato;
-//       font-size: 18px;
-//       font-weight: 400;
-//       color: #d6d9dd;
-//       padding: 54px 46px 4px 44px;
-//     }
-
-// }
-
-.menu-l {
+.hover-effect-language{
   display: none!important;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: auto;
-  height: auto;
-  background-color: $color-5-DB;
-  position: absolute;
-  bottom: 32.5%;
-  left: 54.2%;
-  list-style: none;
-  flex-wrap: wrap;
-  border-radius: 4px;
-  box-shadow: 0 0 0.5em black;
-  cursor: pointer;
-  li {
-    display: block;
+}
+
+.languages-section{
+  .menu-l {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+    height: auto;
+    background-color: $color-5-DB;
+    bottom: 32.5%;
+    left: 54.2%;
     list-style: none;
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 400;
-    color: #c4cacf;
-    padding: 20px 46px 10px 44px;
-  }
-  .tab-nav1, .tab-nav2{
-    border-right: 1px solid #000;
-  }
-  li:hover{
-    transition: 0.8s;
-    background-color: $color-2-LB;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    box-shadow: 0 0 0.5em black;
+    cursor: pointer;
+    position: absolute;
+    position: fixed;
+    li {
+      display: block;
+      list-style: none;
+      font-family: Lato;
+      font-size: 18px;
+      font-weight: 400;
+      color: #c4cacf;
+      padding: 20px 46px 10px 44px;
+    }
+    .tab-nav1, .tab-nav2{
+      border-right: 1px solid #000;
+    }
+    li:hover{
+      transition: 0.8s;
+      background-color: $color-2-LB;
+    }
   }
 }
 
 
+
+
+
+.hover-effect{
+  display: none !important;
+}
 .categories-section{
   display: flex;
   justify-content: center;
@@ -167,6 +167,7 @@ a {
     width: 175px;
     height: 90px;
     background-color: #144E77;
+    border-radius: 4px;
     .LT, p{
       text-align: center;
       font-family: 'Lato';
@@ -206,6 +207,55 @@ a {
     background-color: rgb(255, 255, 255);
   }
 }
+
+
+.menu-acc{
+  width: 200px;
+  height: auto;
+  position: absolute;
+  position: fixed;
+  background-color: $color-5-DB;
+  box-shadow: 0 0 0.5em black;
+  left: 87.6%;
+  bottom: 70%;
+  font-size: 20px;
+  .acc-text{
+    font-size: 20px;
+     @include little-texts-2;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(242,244,246,.9);
+    padding-left: 22px;
+    border-bottom: 1px solid rgb(67, 79, 93);
+    cursor: pointer;
+    padding-top: 0.5px;
+    
+    
+  }
+  h4{
+    @include little-texts-2;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(242,244,246,.9);
+    padding-left: 2px;
+  }
+}
+.acc-text:hover{
+    transition: 0.8s;
+    background-color: $color-2-LB;
+  }
+
+.acc-effect{
+  cursor: pointer;
+}
+
+.menu-click-effect {
+  display: none!important;
+}
+
+
+
+
 
 #main {
   padding-top: 150px;

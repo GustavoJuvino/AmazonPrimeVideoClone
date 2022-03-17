@@ -28,3 +28,32 @@ internLinks.forEach((link) => {
 })
 }
 smoothScroll();
+
+
+
+// Effect Hoover - Top Categories
+
+const aEffect = document.querySelector('.a-effect');
+const navMenu = document.querySelector('.categories-section');
+
+aEffect.addEventListener('click', () => {
+    navMenu.classList.toggle('hover-effect');
+})
+
+
+
+// Effect Hoover - Languages Section
+const liEffect = document.querySelector('.l-acronyms');
+const languageMenu = document.querySelector('.languages-section');
+
+liEffect.addEventListener('click', () => {
+    languageMenu.classList.toggle('hover-effect-language');
+})
+
+
+const accEffect = document.querySelector('.acc-effect');
+const accMenu = document.querySelector('.menu-acc');
+
+accEffect.addEventListener('click', () => {
+    accMenu.classList.toggle('menu-click-effect');
+})
