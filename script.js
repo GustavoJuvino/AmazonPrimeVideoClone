@@ -36,7 +36,11 @@ smoothScroll();
 const aEffect = document.querySelector('.a-effect');
 const navMenu = document.querySelector('.categories-section');
 
-aEffect.addEventListener('click', () => {
+aEffect.addEventListener('mouseenter', () => {
+    navMenu.classList.toggle('hover-effect');
+})
+
+navMenu.addEventListener('mouseleave', () => {
     navMenu.classList.toggle('hover-effect');
 })
 
@@ -51,6 +55,7 @@ liEffect.addEventListener('click', () => {
 })
 
 
+// Effect Hoover - Acc Section
 const accEffect = document.querySelector('.acc-effect');
 const accMenu = document.querySelector('.menu-acc');
 

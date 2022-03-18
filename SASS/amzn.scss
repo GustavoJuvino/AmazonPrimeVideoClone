@@ -168,6 +168,7 @@ a {
     height: 90px;
     background-color: #144E77;
     border-radius: 4px;
+    cursor: pointer;
     .LT, p{
       text-align: center;
       font-family: 'Lato';
@@ -181,11 +182,17 @@ a {
     }
     
   }
+  .card:hover{
+    box-shadow: 0 0 0 2px white;
+  }
   .list-section{
     margin-top: 2%;
     margin-left: 50px;
     display: flex;
     list-style: none;
+    .list-1, .list-2, .list-3 li{
+      cursor: pointer;
+    }
     .list-2{
       margin-top: 3.3%;
     }
@@ -199,6 +206,10 @@ a {
       margin-right: 50px;
       padding-top: 15px
     }
+  }
+  .list-section li:hover{
+    color: white;
+    transition: 0.4s;
   }
   .divider{
     margin-left: 50px;
@@ -344,12 +355,14 @@ a {
     font-weight: 300;
   }
 }
-.cards {
+.channels-section {
   margin-top: 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-
+  .channels-section:hover{
+    border: 2px solid white;
+  }
   .channel {
     width: 250px;
     height: 170px;
