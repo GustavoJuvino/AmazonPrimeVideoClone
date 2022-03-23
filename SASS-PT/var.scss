@@ -1,0 +1,137 @@
+// Colors
+
+// Blue
+$color-1-B: #0F79AF;
+$color-2-B: #0F6895;
+$color-3-B: #0D202F;
+
+
+
+// Dark Colors
+$color-D: #000000;
+$color-1-D: #0D0D0D;
+$color-2-D: #131414;
+$color-3-D: #726e6e;
+$color-4-DB: #182431;
+$color-5-DB: #27323d;
+
+// Light
+$color-1-L: #E1E1E1;
+$color-2-LB: #64778a;
+
+
+
+
+
+// Fonts
+
+// TITLES
+
+$main-font: 'Lato', arial;
+$f-size-title: 55px;
+$f-weight: regular 400;
+
+
+$f-size-title2: 40px;
+$f-weight-L: light 300;
+
+// BUTTONS
+$main-font: 'Lato', arial;
+$font-size: 20px;
+$f-weight: regular 400;
+$f-weight-B: bold 700;
+
+
+// TEXTS
+$main-font: 'Lato', arial;
+$font-size: 20px;
+$f-weight: regular 400;
+$f-weight-L: light 300;
+
+
+// HEADER WORDS
+$main-font: 'Lato', arial;
+$font-size-H: 16px;
+$f-weight-B: bold 700;
+
+//Little Words
+$font-size-LW: 28px;
+$font-size-LW-2: 14px;
+$f-weight-L: light 300;
+
+
+// Font's Config's
+
+@mixin title-text(){
+    font-size: ($f-size-title2);
+    font-weight: (f-weight);
+    font-family: $main-font;
+    color: $color-1-L;
+}
+
+@mixin title-text-2(){
+    font-size: ($f-size-title);
+    font-weight: ($f-weight-L);
+    font-family: $main-font;
+    color: $color-D;
+}
+
+@mixin text-buttons(){
+    font-size: ($font-size);
+    font-family: $main-font;
+    font-weight: $f-weight;
+    color: $color-1-L;
+}
+
+
+@mixin text-buttons-2(){
+    font-size: ($font-size);
+    font-family: $main-font;
+    font-weight: $f-weight-B;
+    color: $color-1-L;
+}
+
+
+
+@mixin texts-p(){
+    font-size: ($font-size);
+    font-family: $main-font;
+    font-weight: $f-weight;
+}
+
+
+
+@mixin texts-p-2(){
+    font-size: ($font-size);
+    font-family: $main-font;
+    font-weight: $f-weight-L;
+}
+
+@mixin header-texts(){
+    font-size: ($font-size-H);
+    font-family: $main-font;
+    font-weight: $f-weight-B;
+    color: $color-1-L;
+}
+
+
+@mixin little-texts(){
+    font-size: ($font-size-LW);
+    font-family: $main-font;
+    font-weight: $f-weight-L;
+    color: #141414;
+}
+
+
+
+@mixin little-texts-2(){
+    font-size: ($font-size-LW-2);
+    font-family: $main-font;
+    font-weight: $f-weight-L;
+    color: $color-1-L;
+}
+
+
+
+
+

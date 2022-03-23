@@ -71,7 +71,7 @@ a {
 .small-button {
   position: relative;
   cursor: pointer;
-  width: 150px;
+  width: 200px;
   height: 40px;
   margin-top: 33px;
   margin-right: 25px;
@@ -81,6 +81,7 @@ a {
   border-radius: 4px;
   color: $color-1-L;
   @include text-buttons;
+  font-size: 18px;
   a {
     color: $color-1-L;
   }
@@ -126,6 +127,14 @@ a {
     li:hover{
       transition: 0.8s;
       background-color: $color-2-LB;
+    }
+    .language-pt{
+      color: white;
+    }
+    .language-pt::before{
+      content: "✓";
+      margin-right: 8px;
+
     }
   }
 }
@@ -179,7 +188,7 @@ a {
       line-height: 22px;
     }
     .LT{
-      padding-top: 22px;
+      padding-top: 24px;
     }
     
   }
@@ -270,7 +279,8 @@ a {
 
 
 #main {
-  padding-top: 150px;
+  padding-top: 100px;
+
   display: flex;
   justify-content: space-between;
   background-color: $color-1-D;
@@ -286,6 +296,7 @@ a {
       @include texts-p();
       color: $color-1-L;
       font-weight: 300;
+      font-size: 22px;
       padding-top: 50px;
     }
   }
@@ -329,13 +340,13 @@ a {
   .small-words {
     margin-top: 50px;
     @include little-texts-2;
-    font-weight: bold;
-    font-size: 1px;
+    font-weight: 400;
+    font-size: 16px;
   }
   .main-background {
     max-width: 50%;
-    height: 750px;
-    min-height: 100px;
+    height: auto;
+    min-height: 100px;    
   }
 }
 
@@ -349,11 +360,14 @@ a {
     @include title-text-2;
     font-weight: 300;
     padding-top: 80px;
+    font-weight: 300;
   }
   p {
     padding-top: 30px;
     @include little-texts;
-    font-weight: 300;
+    font-family: "Lato";
+    font-size: 24px;
+    font-weight: 400;
   }
 }
 .channels-section {
@@ -461,4 +475,3 @@ footer {
     color: $color-3-D;
   }
 }
-
