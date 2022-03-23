@@ -96,7 +96,7 @@ a {
 }
 
 .languages-section{
-  .menu-l {
+  #menu-l {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: auto;
@@ -126,6 +126,14 @@ a {
     li:hover{
       transition: 0.8s;
       background-color: $color-2-LB;
+    }
+    .language-en{
+      color: white;
+    }
+    .language-en::before{
+      content: "✓";
+      margin-right: 8px;
+
     }
   }
 }

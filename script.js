@@ -49,10 +49,25 @@ navMenu.addEventListener('mouseleave', () => {
 // Effect Hoover - Languages Section
 const liEffect = document.querySelector('.l-acronyms');
 const languageMenu = document.querySelector('.languages-section');
+const selectMain = document.querySelector('#main');
+
+
+
 
 liEffect.addEventListener('click', () => {
     languageMenu.classList.toggle('hover-effect-language');
 })
+
+
+function cliqueForaModal(e){
+    if(e.target === this) {
+        languageMenu.classList.add('hover-effect-language');
+    }
+}
+
+
+selectMain.addEventListener('click', cliqueForaModal);
+
 
 
 // Effect Hoover - Acc Section
@@ -68,9 +83,8 @@ accEffect.addEventListener('click', () => {
 
 
 // Change Language
-
 const multLanguages = document.querySelectorAll("#mult-languages");
-console.log(multLanguages[1])
+
 
 
 function checkLink(){
@@ -89,52 +103,4 @@ checkLink()
 
 
 
-// let languageHeader = {
-//     en: {
-//         home: "home",
-//         channels: "channels",
-//         store: "store", 
-//         categories: "Categories",
-//         button1: "Try for free",
-//         language: "EN",
-//     },
-//     pt: {
-//         home: "Início",
-//         channels: "Canais",
-//         store: "Loja",
-//         categories: "Categorias",
-//         button1: "Experimente de graça",
-//         language: "PT",
-//     }
-// }
 
-// // function setLanguage() {
-// //     dataReload[0].addEventListener('click', () =>{
-// //         document.location.reload(true);
-// //     })
-// // }
-
-// function setLanguage() {
-//     multLanguages[1].addEventListener('click', () =>{
-//         divSelector[0].textContent = languageHeader.pt.home;
-//         divSelector[1].textContent = languageHeader.pt.channels;
-//         divSelector[2].textContent = languageHeader.pt.store;
-//         divSelector[3].textContent = languageHeader.pt.categories;
-//         divSelector[4].textContent = languageHeader.pt.button1;
-//         divSelector[5].textContent = languageHeader.pt.language;
-        
-        
-//     });
-//     multLanguages[0].addEventListener('click', () =>{
-//         divSelector[0].textContent = languageHeader.en.home;
-//         divSelector[1].textContent = languageHeader.en.channels;
-//         divSelector[2].textContent = languageHeader.en.store;
-//         divSelector[3].textContent = languageHeader.en.categories;
-//         divSelector[4].textContent = languageHeader.en.button1;
-//         divSelector[5].textContent = languageHeader.en.language;
-
-//         document.location.reload(true);
-//     })
-// }
-
-// setLanguage();
