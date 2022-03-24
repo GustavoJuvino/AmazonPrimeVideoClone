@@ -1,5 +1,6 @@
-@import "./var.scss";
+@import "./var.scss";   //Some configs  <-------
 
+// Configs
 body,
 main,
 footer,
@@ -13,16 +14,13 @@ li {
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
 
 
 
-
 // Header
-
 #showcase {
   display: flex;
   justify-content: space-between;
@@ -40,13 +38,9 @@ a {
   a {
     color: $color-1-L;
   }
-  .a-effect{
+  .a-effect {
     color: rgb(199, 195, 195);
     font-weight: bold;
-  }
-  .a-effect:hover{
-    color: white;
-    transition: 0.5s;
   }
   li {
     padding: 45px 0px 44px 15px;
@@ -63,7 +57,7 @@ a {
   .l-acronyms {
     cursor: pointer;
   }
-  a{
+  a {
     color: $color-1-L;
   }
 }
@@ -91,11 +85,13 @@ a {
 }
 
 
-.hover-effect-language{
-  display: none!important;
+
+// Languages-Menu style
+.hover-effect-language {
+  display: none !important;
 }
 
-.languages-section{
+.languages-section {
   #menu-l {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -111,6 +107,7 @@ a {
     cursor: pointer;
     position: absolute;
     position: fixed;
+    z-index: 4;
     li {
       display: block;
       list-style: none;
@@ -120,32 +117,31 @@ a {
       color: #c4cacf;
       padding: 20px 46px 10px 44px;
     }
-    .tab-nav1, .tab-nav2{
+    .tab-nav1,
+    .tab-nav2 {
       border-right: 1px solid #000;
     }
-    li:hover{
+    li:hover {
       transition: 0.8s;
       background-color: $color-2-LB;
     }
-    .language-en{
+    .language-en {
       color: white;
     }
-    .language-en::before{
+    .language-en::before {
       content: "✓";
       margin-right: 8px;
-
     }
   }
 }
 
 
 
-
-
-.hover-effect{
+// Menu-Categories style
+.hover-effect {
   display: none !important;
 }
-.categories-section{
+.categories-section {
   display: flex;
   justify-content: center;
   width: 100vw;
@@ -155,15 +151,15 @@ a {
   position: absolute;
   position: fixed;
   bottom: 48%;
-  h2{
-    font-family: 'Lato';
+  h2 {
+    font-family: "Lato";
     font-size: 18px;
     font-weight: 400;
     position: absolute;
     bottom: 82%;
     left: 22.2%;
   }
-  .cards-categories{
+  .cards-categories {
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
     gap: 25px;
@@ -171,56 +167,58 @@ a {
     margin-top: 5%;
     margin-left: 15%;
   }
-  .card{
+  .card {
     flex-wrap: wrap;
     width: 175px;
     height: 90px;
-    background-color: #144E77;
+    background-color: #144e77;
     border-radius: 4px;
     cursor: pointer;
-    .LT, p{
+    .LT,
+    p {
       text-align: center;
-      font-family: 'Lato';
+      font-family: "Lato";
       font-size: 16px;
       font-weight: 600;
       padding: 32px 20px 0px 20px;
       line-height: 22px;
     }
-    .LT{
+    .LT {
       padding-top: 22px;
     }
-    
   }
-  .card:hover{
+  .card:hover {
     box-shadow: 0 0 0 2px white;
   }
-  .list-section{
+  .list-section {
     margin-top: 2%;
     margin-left: 50px;
     display: flex;
     list-style: none;
-    .list-1, .list-2, .list-3 li{
+    .list-1,
+    .list-2,
+    .list-3 li {
       cursor: pointer;
     }
-    .list-2{
+    .list-2 {
       margin-top: 3.3%;
     }
-    ul{
-      font-family: 'Lato';
+    ul {
+      font-family: "Lato";
     }
-    li{
-      font-family: 'Lato';
+    li {
+      font-family: "Lato";
       font-size: 16px;
       color: rgb(99, 117, 138);
       margin-right: 50px;
-      padding-top: 15px
+      padding-top: 15px;
     }
   }
-  .list-section li:hover{
+  .list-section li:hover {
     color: white;
     transition: 0.4s;
   }
-  .divider{
+  .divider {
     margin-left: 50px;
     width: 1px;
     height: 340px;
@@ -229,72 +227,81 @@ a {
 }
 
 
-.menu-acc{
+
+// Menu-Account Style
+.menu-acc {
   width: 200px;
   height: auto;
   position: absolute;
   position: fixed;
+  z-index: 4;
   background-color: $color-5-DB;
   box-shadow: 0 0 0.5em black;
   left: 87.6%;
   bottom: 70%;
   font-size: 20px;
-  .acc-text{
+  .acc-text {
     font-size: 20px;
-     @include little-texts-2;
+    @include little-texts-2;
     font-size: 18px;
     font-weight: 400;
-    color: rgba(242,244,246,.9);
+    color: rgba(242, 244, 246, 0.9);
     padding-left: 22px;
     border-bottom: 1px solid rgb(67, 79, 93);
     cursor: pointer;
     padding-top: 0.5px;
-    
-    
   }
-  h4{
+  h4 {
     @include little-texts-2;
     font-size: 18px;
     font-weight: 400;
-    color: rgba(242,244,246,.9);
+    color: rgba(242, 244, 246, 0.9);
     padding-left: 2px;
   }
 }
-.acc-text:hover{
-    transition: 0.8s;
-    background-color: $color-2-LB;
-  }
+.acc-text:hover {
+  transition: 0.8s;
+  background-color: $color-2-LB;
+}
 
-.acc-effect{
+.acc-effect {
   cursor: pointer;
 }
 
 .menu-click-effect {
-  display: none!important;
+  display: none !important;
 }
 
 
 
-
-
+// Main Styles
 #main {
-  padding-top: 150px;
+  height: 650px;
+  padding-top: 100px;
   display: flex;
   justify-content: space-between;
   background-color: $color-1-D;
 
+  .small-words {
+    margin-top: 50px;
+    @include little-texts-2;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  
   .main-texts {
     margin-left: 100px;
     h1 {
       @include title-text;
       font-weight: 500px;
-      padding-top: 130px;
+      padding-top: 100px;
     }
     p {
       @include texts-p();
       color: $color-1-L;
       font-weight: 300;
-      padding-top: 50px;
+      font-size: 22px;
+      padding-top: 20px;
     }
   }
 
@@ -308,6 +315,7 @@ a {
     font-weight: bold;
     cursor: pointer;
   }
+
   .large-button2 {
     width: 340px;
     height: 70px;
@@ -334,20 +342,15 @@ a {
     }
   }
 
-  .small-words {
-    margin-top: 50px;
-    @include little-texts-2;
-    font-weight: bold;
-    font-size: 1px;
-  }
   .main-background {
-    max-width: 50%;
-    height: 750px;
-    min-height: 100px;
+    height: auto;
+    width: 47%;
   }
 }
 
-// Main 2
+
+
+// Main 2 styles
 #channels {
   display: flex;
   justify-content: space-between;
@@ -364,12 +367,13 @@ a {
     font-weight: 300;
   }
 }
+
 .channels-section {
   margin-top: 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  .channels-section:hover{
+  .channels-section:hover {
     border: 2px solid white;
   }
   .channel {
@@ -378,12 +382,15 @@ a {
     cursor: pointer;
   }
 }
+
 .channel:hover {
   transition: 0.3s;
   box-shadow: 0 0 1em black;
 }
 
-// Introducing Prime Video
+
+
+// Introducing Prime Video Section style
 #popcorn {
   margin-top: 50px;
   display: flex;
@@ -420,8 +427,9 @@ a {
   }
 }
 
-// Svg's section
 
+
+// Svg's section style
 .svg-amazon {
   text-align: center;
   display: flex;
@@ -445,7 +453,9 @@ a {
   }
 }
 
-// Footer
+
+
+// Footer style
 footer {
   text-align: center;
   background-color: $color-2-D;
@@ -470,3 +480,20 @@ footer {
   }
 }
 
+
+
+// Background-Shadow style
+.modal-active {
+  display: none !important;
+}
+
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: block;
+}

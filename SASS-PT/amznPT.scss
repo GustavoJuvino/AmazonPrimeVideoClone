@@ -1,5 +1,6 @@
-@import "./var.scss";
+@import "./var.scss"; //Algumas configurações  <-------
 
+// Configs
 body,
 main,
 footer,
@@ -13,16 +14,13 @@ li {
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
 
 
 
-
 // Header
-
 #showcase {
   display: flex;
   justify-content: space-between;
@@ -41,12 +39,8 @@ a {
     color: $color-1-L;
   }
   .a-effect{
-    color: rgb(199, 195, 195);
-    font-weight: bold;
-  }
-  .a-effect:hover{
     color: white;
-    transition: 0.5s;
+    font-weight: bold;
   }
   li {
     padding: 45px 0px 44px 15px;
@@ -92,6 +86,8 @@ a {
 }
 
 
+
+// Languages-Menu style
 .hover-effect-language{
   display: none!important;
 }
@@ -112,6 +108,7 @@ a {
     cursor: pointer;
     position: absolute;
     position: fixed;
+    z-index: 4;
     li {
       display: block;
       list-style: none;
@@ -141,8 +138,7 @@ a {
 
 
 
-
-
+// Menu-Categories style
 .hover-effect{
   display: none !important;
 }
@@ -230,11 +226,13 @@ a {
 }
 
 
+// Menu-Account Style
 .menu-acc{
   width: 200px;
   height: auto;
   position: absolute;
   position: fixed;
+  z-index: 4;
   background-color: $color-5-DB;
   box-shadow: 0 0 0.5em black;
   left: 87.6%;
@@ -250,8 +248,6 @@ a {
     border-bottom: 1px solid rgb(67, 79, 93);
     cursor: pointer;
     padding-top: 0.5px;
-    
-    
   }
   h4{
     @include little-texts-2;
@@ -276,28 +272,34 @@ a {
 
 
 
-
-
+// Main Styles
 #main {
+  height: 650px;
   padding-top: 100px;
-
   display: flex;
   justify-content: space-between;
   background-color: $color-1-D;
 
+  .small-words {
+    margin-top: 50px;
+    @include little-texts-2;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  
   .main-texts {
     margin-left: 100px;
     h1 {
       @include title-text;
       font-weight: 500px;
-      padding-top: 130px;
+      padding-top: 100px;
     }
     p {
       @include texts-p();
       color: $color-1-L;
       font-weight: 300;
       font-size: 22px;
-      padding-top: 50px;
+      padding-top: 20px;
     }
   }
 
@@ -311,6 +313,7 @@ a {
     font-weight: bold;
     cursor: pointer;
   }
+
   .large-button2 {
     width: 340px;
     height: 70px;
@@ -337,20 +340,15 @@ a {
     }
   }
 
-  .small-words {
-    margin-top: 50px;
-    @include little-texts-2;
-    font-weight: 400;
-    font-size: 16px;
-  }
   .main-background {
-    max-width: 50%;
     height: auto;
-    min-height: 100px;    
+    width: 47%;
   }
 }
 
-// Main 2
+
+
+// Main 2 styles
 #channels {
   display: flex;
   justify-content: space-between;
@@ -370,6 +368,7 @@ a {
     font-weight: 400;
   }
 }
+
 .channels-section {
   margin-top: 60px;
   display: grid;
@@ -384,12 +383,15 @@ a {
     cursor: pointer;
   }
 }
+
 .channel:hover {
   transition: 0.3s;
   box-shadow: 0 0 1em black;
 }
 
-// Introducing Prime Video
+
+
+// Introducing Prime Video Section style
 #popcorn {
   margin-top: 50px;
   display: flex;
@@ -426,8 +428,9 @@ a {
   }
 }
 
-// Svg's section
 
+
+// Svg's section style
 .svg-amazon {
   text-align: center;
   display: flex;
@@ -441,7 +444,7 @@ a {
   }
   h2 {
     @include little-texts;
-    font-size: 35px;
+    font-size: 34px;
     font-weight: 500;
   }
   p {
@@ -451,7 +454,9 @@ a {
   }
 }
 
-// Footer
+
+
+// Footer style
 footer {
   text-align: center;
   background-color: $color-2-D;
@@ -475,3 +480,23 @@ footer {
     color: $color-3-D;
   }
 }
+
+
+
+// Background-Shadow style
+.modal-active{
+  display: none !important;
+}
+
+.modal-container{
+  height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: block;
+}
+
+

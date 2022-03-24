@@ -36,6 +36,8 @@ smoothScroll();
 const aEffect = document.querySelector('.a-effect');
 const navMenu = document.querySelector('.categories-section');
 
+
+
 aEffect.addEventListener('mouseenter', () => {
     navMenu.classList.toggle('hover-effect');
 })
@@ -50,11 +52,12 @@ navMenu.addEventListener('mouseleave', () => {
 const liEffect = document.querySelector('.l-acronyms');
 const languageMenu = document.querySelector('.languages-section');
 const selectMain = document.querySelector('#all');
-
+const shadowModal = document.querySelector('.modal-container');
 
 function clickLanguage(){
     liEffect.addEventListener('click', () => {
         languageMenu.classList.toggle('hover-effect-language');
+        shadowModal.classList.toggle('modal-active');
     })
 }
 
@@ -70,6 +73,7 @@ const accMenu = document.querySelector('.menu-acc');
 
 accEffect.addEventListener('click', () => {
     accMenu.classList.toggle('menu-click-effect');
+    shadowModal.classList.toggle('modal-active');
 })
 
 
@@ -82,18 +86,21 @@ const multLanguages = document.querySelectorAll("#mult-languages");
 
 
 function checkLink(){
-    if(window.location.href === "http://127.0.0.1:5500/indexEN.html") {
+    if(window.location.href === "http://127.0.0.1:5501/indexEN.html") {
         multLanguages[1].addEventListener('click', ()=>{
-            window.location.href="http://127.0.0.1:5500/indexPT.html";
+            window.location.href="http://127.0.0.1:5501/indexPT.html";
         })
-    }else if(window.location.href === "http://127.0.0.1:5500/indexPT.html"){
+    }else if(window.location.href === "http://127.0.0.1:5501/indexPT.html"){
         multLanguages[0].addEventListener('click', ()=>{
-            window.location.href="http://127.0.0.1:5500/indexEN.html";
+            window.location.href="http://127.0.0.1:5501/indexEN.html";
         })
     }
 }
 
-checkLink()
+
+// PRIME VIDEO LOGO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
 
 
 
@@ -103,6 +110,8 @@ function closeLanguage(){
         selectMain.classList.toggle('close')
         languageMenu.classList.add('hover-effect-language');
         accMenu.classList.add('menu-click-effect');
+        shadowModal.classList.add('modal-active');
     })
 }
 closeLanguage();
+checkLink()
