@@ -46,28 +46,22 @@ navMenu.addEventListener('mouseleave', () => {
 
 
 
-// Effect Hoover - Languages Section
+// Effect Clcik - Languages Section
 const liEffect = document.querySelector('.l-acronyms');
 const languageMenu = document.querySelector('.languages-section');
-const selectMain = document.querySelector('#main');
+const selectMain = document.querySelector('#all');
 
 
-
-
-liEffect.addEventListener('click', () => {
-    languageMenu.classList.toggle('hover-effect-language');
-})
-
-
-function cliqueForaModal(e){
-    if(e.target === this) {
-        languageMenu.classList.add('hover-effect-language');
-    }
+function clickLanguage(){
+    liEffect.addEventListener('click', () => {
+        languageMenu.classList.toggle('hover-effect-language');
+    })
 }
 
 
-selectMain.addEventListener('click', cliqueForaModal);
 
+
+clickLanguage();
 
 
 // Effect Hoover - Acc Section
@@ -104,3 +98,11 @@ checkLink()
 
 
 
+function closeLanguage(){
+    selectMain.addEventListener('click', ()=>{
+        selectMain.classList.toggle('close')
+        languageMenu.classList.add('hover-effect-language');
+        accMenu.classList.add('menu-click-effect');
+    })
+}
+closeLanguage();
