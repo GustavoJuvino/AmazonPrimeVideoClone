@@ -1,4 +1,4 @@
-// Scroll Suave
+// Smooth Scroll
 
 function smoothScroll() {
 const internLinks = document.querySelectorAll('.js-scroll a[href^="#"]');
@@ -11,31 +11,19 @@ function scrollToSection(event) {
         behavior: 'smooth',
         block: 'start',
     });
-
-
-
-// Alternative Form
-    // const top = section.offsetTop;
-    // window.scrollTo({
-    //     top: top,
-    //     behavior: 'smooth',
-    // })
 }
-
-
 internLinks.forEach((link) => {
     link.addEventListener('click', scrollToSection);
 })
+    
 }
 smoothScroll();
 
 
 
 // Effect Hoover - Top Categories
-
 const aEffect = document.querySelector('.a-effect');
 const navMenu = document.querySelector('.categories-section');
-
 
 
 aEffect.addEventListener('mouseenter', () => {
@@ -54,22 +42,21 @@ const languageMenu = document.querySelector('.languages-section');
 const selectMain = document.querySelector('#all');
 const shadowModal = document.querySelector('.modal-container');
 
+
 function clickLanguage(){
     liEffect.addEventListener('click', () => {
         languageMenu.classList.toggle('hover-effect-language');
         shadowModal.classList.toggle('modal-active');
     })
 }
-
-
-
-
 clickLanguage();
+
 
 
 // Effect Hoover - Acc Section
 const accEffect = document.querySelector('.acc-effect');
 const accMenu = document.querySelector('.menu-acc');
+
 
 accEffect.addEventListener('click', () => {
     accMenu.classList.toggle('menu-click-effect');
@@ -79,10 +66,8 @@ accEffect.addEventListener('click', () => {
 
 
 
-
 // Change Language
 const multLanguages = document.querySelectorAll("#mult-languages");
-
 
 
 function checkLink(){
@@ -101,10 +86,6 @@ function checkLink(){
 // PRIME VIDEO LOGO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
-
-
-
-
 function closeLanguage(){
     selectMain.addEventListener('click', ()=>{
         selectMain.classList.toggle('close')
@@ -113,5 +94,5 @@ function closeLanguage(){
         shadowModal.classList.add('modal-active');
     })
 }
+checkLink();
 closeLanguage();
-checkLink()
