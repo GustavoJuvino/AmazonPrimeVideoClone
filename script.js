@@ -25,14 +25,18 @@ smoothScroll();
 const aEffect = document.querySelector('.a-effect');
 const navMenu = document.querySelector('.categories-section');
 
+function hooverCategories() {
+    aEffect.addEventListener('mouseenter', () => {
+        navMenu.classList.toggle('hover-effect');
+    })
+    
+    navMenu.addEventListener('mouseleave', () => {
+        navMenu.classList.toggle('hover-effect');
+    })
+    
+}
 
-aEffect.addEventListener('mouseenter', () => {
-    navMenu.classList.toggle('hover-effect');
-})
-
-navMenu.addEventListener('mouseleave', () => {
-    navMenu.classList.toggle('hover-effect');
-})
+hooverCategories();
 
 
 
@@ -48,45 +52,54 @@ function clickLanguage(){
         languageMenu.classList.toggle('hover-effect-language');
         shadowModal.classList.toggle('modal-active');
     })
+    liEffect.addEventListener('touchstart', () => {
+        languageMenu.classList.toggle('hover-effect-language');
+        shadowModal.classList.toggle('modal-active');
+    })
 }
 clickLanguage();
 
 
 
-// Effect Hoover - Acc Section
+// Effect Click - Acc Section
 const accEffect = document.querySelector('.acc-effect');
-const accMenu = document.querySelector('.menu-acc');
+const accMenu = document.querySelector('.menu-acc')
 
+function accClick()  {
+    accEffect.addEventListener('click', () => {
+        accMenu.classList.toggle('menu-click-effect');
+        shadowModal.classList.toggle('modal-active');
+    })
 
-accEffect.addEventListener('click', () => {
-    accMenu.classList.toggle('menu-click-effect');
-    shadowModal.classList.toggle('modal-active');
-})
+    accEffect.addEventListener('touchstart', () => {
+        accMenu.classList.toggle('menu-click-effect');
+        shadowModal.classList.toggle('modal-active');
+    })
+}
 
-
-
+accClick();
 
 // Change Language
 const multLanguages = document.querySelectorAll("#mult-languages");
 
 
 function checkLink(){
-    if(window.location.href === "http://127.0.0.1:5501/indexEN.html") {
+    if(window.location.href === "http://127.0.0.1:5501/EN/indexEN.html") {
         multLanguages[1].addEventListener('click', ()=>{
-            window.location.href="http://127.0.0.1:5501/indexPT.html";
+            window.location.href="http://127.0.0.1:5501/PT/indexPT.html";
         })
-    }else if(window.location.href === "http://127.0.0.1:5501/indexPT.html"){
+    }else if(window.location.href === "http://127.0.0.1:5501/PT/indexPT.html"){
         multLanguages[0].addEventListener('click', ()=>{
-            window.location.href="http://127.0.0.1:5501/indexEN.html";
+            window.location.href="http://127.0.0.1:5501/EN/indexEN.html";
         })
     }
 }
+checkLink();
 
 
-// PRIME VIDEO LOGO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
-function closeLanguage(){
+// Close Menus
+function closeMenus(){
     selectMain.addEventListener('click', ()=>{
         selectMain.classList.toggle('close')
         languageMenu.classList.add('hover-effect-language');
@@ -94,5 +107,4 @@ function closeLanguage(){
         shadowModal.classList.add('modal-active');
     })
 }
-checkLink();
-closeLanguage();
+closeMenus();
