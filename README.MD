@@ -1,12 +1,17 @@
 <p align="center">
-<h1 align="center">Amazon Prime Video (Clone)🎦</h1>
+ <h1 align="center">Amazon Prime Video (Clone)🎦</h1>
 </p>
- <h4 align="center">
-In this project I tried to challenge myself to clone the Amazon Prime Video home page.</h6>
+
+<h4 align="center">
+ In this project I tried to challenge myself to clone the Amazon Prime Video home page.</h6>
 <br><br>
+
 <h6 align="center">
-This project was created with:
- </h6>
+ This project was created with:
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+</h6>
 
 
 
