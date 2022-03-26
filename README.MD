@@ -1,12 +1,12 @@
 <p align="center">
 <h1 align="center">Amazon Prime Video (Clone)🎦</h1>
 </p>
- <h6 align="center">
+ <h4 align="center">
 In this project I tried to challenge myself to clone the Amazon Prime Video home page.</h6>
 <br><br>
-<p align="center">
+<h6 align="center">
 This project was created with:
- </p>
+ </h6>
 
 
 
