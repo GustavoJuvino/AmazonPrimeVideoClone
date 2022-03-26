@@ -3,10 +3,9 @@
 </p>
  <p align="center">
 In this project I tried to challenge myself to clone the Amazon Prime Video home page.
+This project was created with:
 </p>
-<p align="center" style="font-size: 22px;">
- This project was created with:
- </p<
+
 
 
 <img src="./Imgs-Project/amzngif.gif" title="imgamz"></img>
