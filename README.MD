@@ -1,16 +1,21 @@
+
+
 <p align="center">
  <h1 align="center">Amazon Prime Video (Clone)🎦</h1>
 </p>
 
 <h4 align="center">
  In this project I tried to challenge myself to clone the Amazon Prime Video home page.</h6>
-<br><br>
-
 <h6 align="center">
  This project was created with:
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+ <br>
+ <br>
+ <div style="display: flex;">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" width=40px height=40px alt="HTML"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"  width=40px height=40px alt="CSS"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width=40px height=40px alt="SASS"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" width=40px height=40px alt="JS"/>
+ </div>
 </h6>
 
 
