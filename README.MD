@@ -4,7 +4,7 @@
  <p align="center">
 In this project I tried to challenge myself to clone the Amazon Prime Video home page.
 </p>
-<p align="center" font-style="italic">
+<p align="center" style="font-size: 22px;">
  This project was created with:
  </p<
 
