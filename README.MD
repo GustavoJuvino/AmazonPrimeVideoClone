@@ -5,4 +5,4 @@
 In this project I tried to challenge myself to clone the Amazon Prime Video home page.
 </p>
 
-<img src="./Imgs-Project/amzngif.gif" title="imgamz1"></img>
+<img src="./Imgs-Project/Amzn1.png" title="imgamz1"></img>
