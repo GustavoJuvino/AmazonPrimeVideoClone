@@ -1,8 +1,8 @@
 <p align="center">
 <h1 align="center">Amazon Prime Video (Clone)🎦</h1>
 </p>
- <h2 align="center">
-In this project I tried to challenge myself to clone the Amazon Prime Video home page.</h2>
+ <h6 align="center">
+In this project I tried to challenge myself to clone the Amazon Prime Video home page.</h6>
 <br><br>
 <p align="center">
 This project was created with:
