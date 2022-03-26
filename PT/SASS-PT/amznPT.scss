@@ -30,7 +30,9 @@ a {
   background-color: $color-4-DB;
 }
 
-.list-left {
+.left-list {
+  font-family: 'Lato';
+  font-size: 18px;
   display: flex;
   .logo {
     padding: 30px;
@@ -47,7 +49,9 @@ a {
   }
 }
 
-.list-right {
+.right-list {
+  font-family: 'Lato';
+  font-size: 18px;
   display: flex;
   li {
     margin-top: 40px;
@@ -55,6 +59,8 @@ a {
     color: $color-1-L;
   }
   .l-acronyms {
+    font-family: 'Lato';
+    font-size: 18px;
     cursor: pointer;
   }
   a{
@@ -147,7 +153,8 @@ a {
   justify-content: center;
   width: 100vw;
   height: 400px;
-  background-color: $color-3-B;
+  background: rgb(18,39,57);
+  background: linear-gradient(163deg, rgba(18,39,57,1) 23%, rgba(12,28,42,1) 48%);
   color: white;
   position: absolute;
   position: fixed;
