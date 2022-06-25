@@ -5,7 +5,11 @@
 </p>
 
 <h4 align="center">
- In this project I tried to challenge myself to clone the Amazon Prime Video home page.</h6>
+ In this project I tried to challenge myself to clone the Amazon Prime Video home page. As I used the request through the fetch method, a live server will be necessary to use the navigation between one page and another one (English page and Portuguese Page).<br><br>
+ <a href="https://gustavojuvino.github.io/AmazonPrimeVideoClone/"> Amazon Prime Video Clone</a>
+</h4>
+
+
 <h6 align="center">
  This project was created with:
  <br>
