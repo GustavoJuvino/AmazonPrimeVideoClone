@@ -79,6 +79,7 @@ const multLanguages = document.querySelectorAll("#mult-languages");
 multLanguages[1].addEventListener("click", () =>{
     fetch('../PT/index.html').then(r => {
         window.location.href = r.url;
+        console.log("teste")
     })
 })
 
