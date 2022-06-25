@@ -72,24 +72,22 @@ function accClick()  {
 
 accClick();
 
-// Change Language
+// Changing Languages
 const multLanguages = document.querySelectorAll("#mult-languages");
 
+// Portuguese Page
+multLanguages[1].addEventListener("click", () =>{
+    fetch('../PT/index.html').then(r => {
+        window.location.href = r.url;
+    })
+})
 
-function checkLink(){
-    if(window.location.href === "http://127.0.0.1:5501/EN/indexEN.html") {
-        multLanguages[1].addEventListener('click', ()=>{
-            window.location.href="http://127.0.0.1:5501/PT/indexPT.html";
-        })
-    }else if(window.location.href === "http://127.0.0.1:5501/PT/indexPT.html"){
-        multLanguages[0].addEventListener('click', ()=>{
-            window.location.href="http://127.0.0.1:5501/EN/indexEN.html";
-        })
-    }
-}
-checkLink();
-
-
+// English Page
+multLanguages[0].addEventListener("click", () =>{
+    fetch("../index.html").then(r => {
+        window.location.href = r.url;
+    })
+})
 
 // Close Menus
 function closeMenus(){
