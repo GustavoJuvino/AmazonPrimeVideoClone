@@ -36,9 +36,7 @@ hooverCategories();
 // Effect Clcik - Languages Section
 const liEffect = document.querySelector(".l-acronyms");
 const languageMenu = document.querySelector(".languages-section");
-const selectMain = document.querySelector("#all");
 const shadowModal = document.querySelector(".modal-container");
-
 
 function clickLanguage(){
     liEffect.addEventListener("click", () => {
@@ -76,23 +74,30 @@ accClick();
 const multLanguages = document.querySelectorAll("#mult-languages");
 
 // Portuguese Page
+let currentPage = window.location.pathname;
+console.log(currentPage)
+
 multLanguages[1].addEventListener("click", () =>{
-    fetch('../PT/index.html').then(r => {
-        window.location.href = r.url;
-        console.log("teste")
-    })
+    if (currentPage === '/index.html'){
+        window.location.href="/PT/index.html";
+    }
 })
 
-// English Page
+// // English Page
 multLanguages[0].addEventListener("click", () =>{
-    fetch("../index.html").then(r => {
-        window.location.href = r.url;
-    })
+    if (currentPage == '/PT/index.html'){
+        window.location.href="/index.html";
+    }
+    
 })
+
 
 // Close Menus
+const selectMain = document.querySelector("#all");
+
 function closeMenus(){
     selectMain.addEventListener("click", ()=>{
+        console.log("click")
         selectMain.classList.toggle("close")
         languageMenu.classList.add("hover-effect-language");
         accMenu.classList.add("menu-click-effect");
@@ -100,3 +105,6 @@ function closeMenus(){
     })
 }
 closeMenus();
+
+
+
